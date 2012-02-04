@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+	<title>Super Image Dragger</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<style type="text/css">
+		body {
+			font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
+			color: #333;
+		}
+		a {
+			text-decoration: none;
+			color: #0e7ac2;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		div#wrapper {
+			width: 600px;
+			margin: 0 auto;
+			text-align: center;
+			padding: 20px 0 40px 0;
+		}
+		iframe {
+			border: 1px solid #ddd;
+		}
+	</style>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		
+			$("#test").click(function(){
+				$.ajax({
+					url: "imagedragger.js",
+					success: function(data){}
+				});
+				return false;
+			});
+			
+		});
+	</script>
+	
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<h1>Super Image Dragger</h1>	
+		<iframe frameborder="0" src="imagedragger.js" width="600" height="500" id="draggercode"></iframe>
+		<br />
+		<br />
+		<a href="#" id="test">Test</a>
+	</div>
+
+</body>
+</html>
+
