@@ -120,7 +120,7 @@ javascript:(function(){
 
 	/* Get image url */
 	
-	var image_url = prompt("Enter image url", "http://dl.dropbox.com/u/22817005/details.png");
+	var image_url = prompt("Enter image url", "http://dl.dropbox.com/u/22817005/drag.png");
 	
 	/* If image exists, change src and reset position */
 	
